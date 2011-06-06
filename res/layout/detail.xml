@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:orientation="vertical"
+>
+		<com.cauly.android.ad.AdView xmlns:app="http://schemas.android.com/apk/res/kr.comnic.MyoungPum"
+			android:id="@+id/ad" 
+	        android:layout_width="fill_parent" 
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentBottom="true"
+	        app:appcode="wCrQXfwGKF"	
+	        app:adtype="cpc"
+	        app:gender="all"
+	        app:age="all"
+	        app:gps="off"
+	        app:effect="half"
+	        app:allowcall="yes"	
+	        app:reloadInterval="20" />
+
+	<android.webkit.WebView
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:id="@+id/wvDetail"
+	android:layout_weight="1"></android.webkit.WebView>
+</LinearLayout>

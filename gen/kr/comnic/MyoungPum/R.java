@@ -9,23 +9,93 @@ package kr.comnic.MyoungPum;
 
 public final class R {
     public static final class attr {
+        /** <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int action=0x7f010000;
+        /** <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int adtype=0x7f010002;
+        /** <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int age=0x7f010004;
+        /** <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int allowcall=0x7f010008;
+        /** <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int appcode=0x7f010001;
+        /** <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int effect=0x7f010007;
+        /** <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int gender=0x7f010003;
+        /** <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int gps=0x7f010006;
+        /** <p>Must be an integer value, such as "<code>100</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int reloadInterval=0x7f010005;
     }
     public static final class drawable {
         public static final int icon=0x7f020000;
-        public static final int list001=0x7f020001;
-        public static final int list002=0x7f020002;
-        public static final int list003=0x7f020003;
-        public static final int list004=0x7f020004;
-        public static final int logo=0x7f020005;
-        public static final int main1=0x7f020006;
-        public static final int main2=0x7f020007;
-        public static final int main3=0x7f020008;
-        public static final int main4=0x7f020009;
+        public static final int icon1=0x7f020001;
+        public static final int list001=0x7f020002;
+        public static final int list002=0x7f020003;
+        public static final int list003=0x7f020004;
+        public static final int list004=0x7f020005;
+        public static final int logo=0x7f020006;
     }
     public static final class id {
-        public static final int gridList=0x7f050001;
-        public static final int imageView1=0x7f050002;
-        public static final int webkitWebView1=0x7f050000;
+        public static final int ad=0x7f050000;
+        public static final int gridList=0x7f050002;
+        public static final int imageView1=0x7f050003;
+        public static final int wvDetail=0x7f050001;
     }
     public static final class layout {
         public static final int detail=0x7f030000;
@@ -36,4 +106,163 @@ public final class R {
         public static final int app_name=0x7f040001;
         public static final int hello=0x7f040000;
     }
+    public static final class styleable {
+        /** Attributes that can be used with a com_cauly_android_ad_AdView.
+           <p>Includes the following attributes:</p>
+           <table>
+           <colgroup align="left" />
+           <colgroup align="left" />
+           <tr><th>Attribute</th><th>Description</th></tr>
+           <tr><td><code>{@link #com_cauly_android_ad_AdView_action kr.comnic.MyoungPum:action}</code></td><td></td></tr>
+           <tr><td><code>{@link #com_cauly_android_ad_AdView_adtype kr.comnic.MyoungPum:adtype}</code></td><td></td></tr>
+           <tr><td><code>{@link #com_cauly_android_ad_AdView_age kr.comnic.MyoungPum:age}</code></td><td></td></tr>
+           <tr><td><code>{@link #com_cauly_android_ad_AdView_allowcall kr.comnic.MyoungPum:allowcall}</code></td><td></td></tr>
+           <tr><td><code>{@link #com_cauly_android_ad_AdView_appcode kr.comnic.MyoungPum:appcode}</code></td><td></td></tr>
+           <tr><td><code>{@link #com_cauly_android_ad_AdView_effect kr.comnic.MyoungPum:effect}</code></td><td></td></tr>
+           <tr><td><code>{@link #com_cauly_android_ad_AdView_gender kr.comnic.MyoungPum:gender}</code></td><td></td></tr>
+           <tr><td><code>{@link #com_cauly_android_ad_AdView_gps kr.comnic.MyoungPum:gps}</code></td><td></td></tr>
+           <tr><td><code>{@link #com_cauly_android_ad_AdView_reloadInterval kr.comnic.MyoungPum:reloadInterval}</code></td><td></td></tr>
+           </table>
+           @see #com_cauly_android_ad_AdView_action
+           @see #com_cauly_android_ad_AdView_adtype
+           @see #com_cauly_android_ad_AdView_age
+           @see #com_cauly_android_ad_AdView_allowcall
+           @see #com_cauly_android_ad_AdView_appcode
+           @see #com_cauly_android_ad_AdView_effect
+           @see #com_cauly_android_ad_AdView_gender
+           @see #com_cauly_android_ad_AdView_gps
+           @see #com_cauly_android_ad_AdView_reloadInterval
+         */
+        public static final int[] com_cauly_android_ad_AdView = {
+            0x7f010000, 0x7f010001, 0x7f010002, 0x7f010003,
+            0x7f010004, 0x7f010005, 0x7f010006, 0x7f010007,
+            0x7f010008
+        };
+        /**
+          <p>This symbol is the offset where the {@link kr.comnic.MyoungPum.R.attr#action}
+          attribute's value can be found in the {@link #com_cauly_android_ad_AdView} array.
+
+
+          <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name android:action
+        */
+        public static final int com_cauly_android_ad_AdView_action = 0;
+        /**
+          <p>This symbol is the offset where the {@link kr.comnic.MyoungPum.R.attr#adtype}
+          attribute's value can be found in the {@link #com_cauly_android_ad_AdView} array.
+
+
+          <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name android:adtype
+        */
+        public static final int com_cauly_android_ad_AdView_adtype = 2;
+        /**
+          <p>This symbol is the offset where the {@link kr.comnic.MyoungPum.R.attr#age}
+          attribute's value can be found in the {@link #com_cauly_android_ad_AdView} array.
+
+
+          <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name android:age
+        */
+        public static final int com_cauly_android_ad_AdView_age = 4;
+        /**
+          <p>This symbol is the offset where the {@link kr.comnic.MyoungPum.R.attr#allowcall}
+          attribute's value can be found in the {@link #com_cauly_android_ad_AdView} array.
+
+
+          <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name android:allowcall
+        */
+        public static final int com_cauly_android_ad_AdView_allowcall = 8;
+        /**
+          <p>This symbol is the offset where the {@link kr.comnic.MyoungPum.R.attr#appcode}
+          attribute's value can be found in the {@link #com_cauly_android_ad_AdView} array.
+
+
+          <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name android:appcode
+        */
+        public static final int com_cauly_android_ad_AdView_appcode = 1;
+        /**
+          <p>This symbol is the offset where the {@link kr.comnic.MyoungPum.R.attr#effect}
+          attribute's value can be found in the {@link #com_cauly_android_ad_AdView} array.
+
+
+          <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name android:effect
+        */
+        public static final int com_cauly_android_ad_AdView_effect = 7;
+        /**
+          <p>This symbol is the offset where the {@link kr.comnic.MyoungPum.R.attr#gender}
+          attribute's value can be found in the {@link #com_cauly_android_ad_AdView} array.
+
+
+          <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name android:gender
+        */
+        public static final int com_cauly_android_ad_AdView_gender = 3;
+        /**
+          <p>This symbol is the offset where the {@link kr.comnic.MyoungPum.R.attr#gps}
+          attribute's value can be found in the {@link #com_cauly_android_ad_AdView} array.
+
+
+          <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name android:gps
+        */
+        public static final int com_cauly_android_ad_AdView_gps = 6;
+        /**
+          <p>This symbol is the offset where the {@link kr.comnic.MyoungPum.R.attr#reloadInterval}
+          attribute's value can be found in the {@link #com_cauly_android_ad_AdView} array.
+
+
+          <p>Must be an integer value, such as "<code>100</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name android:reloadInterval
+        */
+        public static final int com_cauly_android_ad_AdView_reloadInterval = 5;
+    };
 }
