@@ -5,11 +5,12 @@
 	android:layout_height="fill_parent"
 	android:orientation="vertical"
 >
+	<FrameLayout android:id="@+id/frameLayout1" android:layout_width="fill_parent" android:layout_height="80px" android:background="@drawable/ad_area">
 		<com.cauly.android.ad.AdView xmlns:app="http://schemas.android.com/apk/res/kr.comnic.MyoungPum"
 			android:id="@+id/ad" 
 	        android:layout_width="fill_parent" 
-	        android:layout_height="wrap_content"
 	        android:layout_alignParentBottom="true"
+	        android:layout_weight="0"
 	        app:appcode="wCrQXfwGKF"	
 	        app:adtype="cpc"
 	        app:gender="all"
@@ -17,7 +18,9 @@
 	        app:gps="off"
 	        app:effect="half"
 	        app:allowcall="yes"	
-	        app:reloadInterval="20" />
+	        app:reloadInterval="30" android:layout_height="fill_parent">
+		</com.cauly.android.ad.AdView>
+	</FrameLayout>
 
 	<android.webkit.WebView
 		android:layout_width="fill_parent"

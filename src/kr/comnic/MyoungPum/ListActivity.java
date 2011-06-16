@@ -50,7 +50,7 @@ class MyWebClient extends WebViewClient{
 class ImageAdapter extends BaseAdapter {
 	private Context mContext;
 	
-	int[] picture = { R.drawable.list004, R.drawable.list002, R.drawable.list001, R.drawable.list003 };
+	int[] picture = { R.drawable.list001, R.drawable.list002, R.drawable.list003, R.drawable.list004, R.drawable.list005 };
 	
 	public ImageAdapter(Context c){
 		mContext = c;
