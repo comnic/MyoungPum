@@ -2,6 +2,8 @@ package kr.comnic.MyoungPum;
 
 import java.util.ArrayList;
 
+import net.daum.mobilead.AdHttpListener;
+import net.daum.mobilead.MobileAdView;
 import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
@@ -14,10 +16,18 @@ import android.widget.BaseAdapter;
 import android.widget.GridView;
 import android.widget.ImageView;
 import android.widget.ListView;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
-import android.widget.AdapterView.OnItemClickListener;
 
-public class ListActivity extends Activity {
+import com.cauly.android.ad.AdInfo;
+import com.cauly.android.ad.AdListener;
+import com.cauly.android.ad.AdView;
+
+public class ListActivity extends Activity implements AdListener, AdHttpListener{
+	private RelativeLayout m_adLayout;
+	private AdView m_caulyADView = null;
+	private MobileAdView m_adamADView = null;
+
 	private ArrayList<MPItem> m_items;
 	private ListView m_list;
 	private Intent clsDetailIntent;
@@ -27,12 +37,39 @@ public class ListActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.list);
         
+        m_adLayout = (RelativeLayout)findViewById(R.id.ADLayout1);      
+        
+        /*
+        ////////////////////////////////////////////////////////////////////////////////////////////////////
+        AdInfo ads_info = new AdInfo();
+        //ads_info.initData("", adtype, gender, age, gps, effect, allowcall, reloadInterval)
+        //irmWTe609U
+        ads_info.initData("wCrQXfwGKF", "CPC", "all", "all", "off", "circle", "no", 30);
+       
+        m_caulyADView = new AdView(this);
+        m_caulyADView.setAdListener(this);
+        
+        m_adLayout.addView(m_caulyADView);
+        //////////////////////////////////////////////////////////////////////////////////////////////////////
+        */
+        
         m_items = new ArrayList<MPItem>();
         m_items.add(new MPItem("Hermes", R.drawable.list_s001, false, MPItem.MPITEM_RATING_1));
         m_items.add(new MPItem("Chanel", R.drawable.list_s002, false, MPItem.MPITEM_RATING_1));
         m_items.add(new MPItem("Louis Vuitton", R.drawable.list_s003, false, MPItem.MPITEM_RATING_1));
         m_items.add(new MPItem("D&G", R.drawable.list_s004, false, MPItem.MPITEM_RATING_1));
         m_items.add(new MPItem("BURBERRY", R.drawable.list_s005, false, MPItem.MPITEM_RATING_1));
+        
+        //////////////////////////////////////////////////////////////////////////////////////////////////////
+		net.daum.mobilead.AdConfig.setClientId("a30Z0CT130bc82253c");
+		m_adamADView = new MobileAdView(this);
+		
+		m_adamADView.setAdListener(this);
+		m_adamADView.setVisibility(View.VISIBLE);
+		
+		//m_caulyADView.setVisibility(View.GONE);
+		m_adLayout.addView(m_adamADView);
+        //////////////////////////////////////////////////////////////////////////////////////////////////////
         
         m_list = (ListView)findViewById(R.id.listView);
         m_list.setAdapter(new MPItemAdapter(this, R.layout.list_item, m_items));
@@ -62,6 +99,37 @@ public class ListActivity extends Activity {
 		}
 	
     };
+
+	@Override
+	public void onFailedToReceiveAd(boolean arg0) {
+		// TODO Auto-generated method stub
+		net.daum.mobilead.AdConfig.setClientId("a30Z0CT130bc82253c");
+		m_adamADView = new MobileAdView(this);
+		
+		m_adamADView.setAdListener(this);
+		m_adamADView.setVisibility(View.VISIBLE);
+		
+		m_caulyADView.setVisibility(View.GONE);
+		m_adLayout.addView(m_adamADView);
+	}
+
+	@Override
+	public void onReceiveAd() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void didDownloadAd_AdListener() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void failedDownloadAd_AdListener(int arg0, String arg1) {
+		// TODO Auto-generated method stub
+		
+	}
     	
     
 }
