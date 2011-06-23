@@ -18,7 +18,9 @@ public class DetailActivity extends Activity {
         Intent intent = getIntent();
         String selectedItem = intent.getStringExtra("selectedItem");
         
+
         WebView wvDetail = (WebView)findViewById(R.id.wvDetail);
+        wvDetail.getSettings().setJavaScriptEnabled(true);
         wvDetail.loadUrl(String.format("file:///android_asset/i00%s.html", selectedItem));
 /*        
         findViewById(R.id.btnList).setOnClickListener(new View.OnClickListener() {
